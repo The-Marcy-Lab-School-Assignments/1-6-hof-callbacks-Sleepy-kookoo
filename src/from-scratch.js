@@ -26,7 +26,6 @@ const myFind = (arr, callback) => {
       return result[i]
     }
   }
-  return
 };
 
 // const nums = [1, 2, 3];
@@ -35,10 +34,24 @@ const myFind = (arr, callback) => {
 
 // const names = ['Alice', 'Bob', 'Charlie'];
 // const firstLongName = myFind(names, (name) => name.length > 5);
-// console.log(names, firstLongName)
+// console.log(firstLongName)
 
-const myFilter = () => {
+const myFilter = (arr, callback) => {
+  let newArr = []
+  for (let i = 0; i < arr.length; i++) {
+    if (callback(arr[i])) {
+      newArr.push(arr[i])
+    }
+  }
+  return newArr
 };
+
+// const myNames = ['Alice', 'Bob', 'Charlie', 'Debbie', 'Barry'];
+// const namesWithB = myFilter(myNames, (name) => name.includes('B'));
+// console.log(namesWithB); // ['Bob', 'Barry']
+
+// const namesWithZ = myFilter(myNames, (name) => name.includes('Z'));
+// console.log(nameHasZ); // []
 
 const sortWords = () => {
 };
