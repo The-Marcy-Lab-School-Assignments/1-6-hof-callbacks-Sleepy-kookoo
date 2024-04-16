@@ -53,7 +53,8 @@ const myFilter = (arr, callback) => {
 // const namesWithZ = myFilter(myNames, (name) => name.includes('Z'));
 // console.log(nameHasZ); // []
 
-const sortWords = () => {
+const sortWords = (arr) => {
+
 };
 
 const sortNumbers = () => {
