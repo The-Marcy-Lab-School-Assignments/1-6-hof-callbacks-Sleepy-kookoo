@@ -19,8 +19,23 @@ const myMap = (arr, callback) => {
 };
 
 
-const myFind = () => {
+const myFind = (arr, callback) => {
+  let result = [...arr]
+  for (let i = 0; i < result.length; i++) {
+    if (callback(result[i])) {
+      return result[i]
+    }
+  }
+  return
 };
+
+// const nums = [1, 2, 3];
+// const firstEvenNum = myFind(nums, (num) => num % 2 === 0);
+// console.log(firstEvenNum)
+
+// const names = ['Alice', 'Bob', 'Charlie'];
+// const firstLongName = myFind(names, (name) => name.length > 5);
+// console.log(names, firstLongName)
 
 const myFilter = () => {
 };
