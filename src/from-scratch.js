@@ -58,12 +58,15 @@ const sortWords = (arr) => {
   sorted.sort();
   return sorted
 };
-const unsortedNames = ['Charlie', 'Debbie', 'Alice', 'Bob'];
-const sortedNames = sortWords(unsortedNames);
-console.log(sortedNames); // ['Alice', 'Bob', 'Charlie', 'Debbie']
+// const unsortedNames = ['Charlie', 'Debbie', 'Alice', 'Bob'];
+// const sortedNames = sortWords(unsortedNames);
+// console.log(sortedNames); // ['Alice', 'Bob', 'Charlie', 'Debbie']
 // console.log(unsortedNames);
 
-const sortNumbers = () => {
+const sortNumbers = (arrOfNums) => {
+  const sortedNums = [...arrOfNums];
+  sortedNums.sort((a, b) => a - b);
+  return sortedNums
 };
 
 const sortNumbersBetter = () => {
