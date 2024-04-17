@@ -54,8 +54,14 @@ const myFilter = (arr, callback) => {
 // console.log(nameHasZ); // []
 
 const sortWords = (arr) => {
-
+  const sorted = [...arr]
+  sorted.sort();
+  return sorted
 };
+const unsortedNames = ['Charlie', 'Debbie', 'Alice', 'Bob'];
+const sortedNames = sortWords(unsortedNames);
+console.log(sortedNames); // ['Alice', 'Bob', 'Charlie', 'Debbie']
+// console.log(unsortedNames);
 
 const sortNumbers = () => {
 };
