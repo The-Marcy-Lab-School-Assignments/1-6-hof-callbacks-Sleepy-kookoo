@@ -5,12 +5,12 @@ const myEvery = (arr, callback) => {
   return true;
 };
 
-const oddNums = [1, 3, 5, 7, 9];
-const areAllNumsOdd1 = myEvery(oddNums, (num) => num % 2);
-console.log(areAllNumsOdd1)
+// const oddNums = [1, 3, 5, 7, 9];
+// const areAllNumsOdd1 = myEvery(oddNums, (num) => num % 2);
+// console.log(areAllNumsOdd1)
 
 const sortUsersBy = (users, sortingFunction) => {
-  return [...users].sort(sortingFunction());
+  return [...users].sort(sortingFunction);
 };
 
 const logEachName = (names) => {
