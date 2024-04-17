@@ -80,7 +80,10 @@ const sortNumbersBetter = (arrOfNums, isDescending) => {
   }
 };
 
-const sortUsersByOrder = () => {
+const sortUsersByOrder = (arrOfObj) => {
+  const sorted = [...arrOfObj]
+  sorted.sort((a, b) => a.order - b.order);
+  return sorted
 };
 
 const sortUsersByName = () => {
