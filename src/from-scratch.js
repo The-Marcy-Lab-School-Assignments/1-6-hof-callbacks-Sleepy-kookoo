@@ -69,7 +69,15 @@ const sortNumbers = (arrOfNums) => {
   return sortedNums
 };
 
-const sortNumbersBetter = () => {
+const sortNumbersBetter = (arrOfNums, isDescending) => {
+  const sortedNums = [...arrOfNums];
+  if (isDescending === true) {
+    sortedNums.sort((a, b) => b - a);
+    return sortedNums
+  } else {
+    sortedNums.sort((a, b) => a - b)
+    return sortedNums
+  }
 };
 
 const sortUsersByOrder = () => {
